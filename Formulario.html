@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Teste</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Atenção! Formulário Teste</h1>
+        <hr> <br>
+        <p><strong>Digite Seus Dados Abaixo</strong> </p>
+        <br> <br>
+        <fieldset>
+            <legend>Nome Completo</legend>
+            <input type="text" value="" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Email</legend>
+            <datalist id="emails">
+                <option>rocketseat@gmail.com</option>
+                <option>gustavoC@gmail.com</option>
+                <option>qualquer@gmail.com</option>
+            </datalist>
+            <input type="email" value="" required multiple list="emails">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Senha</legend>
+            <input type="password" value="" pattern="[0-9a-fA-F]{4,8}"
+                title="Insira Hex Decimal no Minimo 4 caracteres e No Máximo 8 caracteres">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Data De Nascimento</legend>
+            <input type="date" value="" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Qual Sua Cor Favorita Entre As Selecionadas?</legend>
+            <datalist id="Cores">
+                <option>#05584B</option>
+                <option>#FAEE18</option>
+                <option>#FAEE18</option>
+                <option>#7222FB</option>
+            </datalist>
+            <input type="color" list="Cores" >
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Selecione O Arquivo Para Enviar
+            </legend>
+            <input type="file">
+        </fieldset>
+        <br>
+
+        Receber Notificações
+        </label>
+        <input type="checkbox">
+        </label>
+        <br> <br>
+       
+    </form>
+    <a href="Fechamento.html"><button autofocus type="submit"> Enviar Dados</button></a>
+    
+</body>
+
+</html><!--<a href="Fechamento.html" id="Link"> </a><button type="onclick" autofocus inputmode="numeric"> Enviar
+    Dados</button>
